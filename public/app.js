@@ -35,6 +35,6 @@ else if(amount>7500){
 }
 }
 
-function calc_discount(){
-return amount-amount*(discount)
+function calc_discount(discount){
+return amount-amount*(discount/100)
 }
