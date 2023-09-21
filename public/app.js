@@ -1,6 +1,9 @@
 function calc(){
 const amount = document.getElementById("amountInput").value;
-
+if(amount<0){
+    document.getElementById("discountedAmount").innerHTML="Invalid Input"
+}
+else{
 if(amount<1000){
     document.getElementById("discountedAmount").innerHTML = "Discounted Amount: $"+ amount;
   
@@ -29,4 +32,9 @@ else if(amount>7500){
 
 }
 
+}
+}
+
+function calc_discount(){
+return amount-amount*(discount)
 }
